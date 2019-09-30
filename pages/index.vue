@@ -4,17 +4,11 @@
     justify-center
     align-center
   >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <ul>
-          <li v-for="post in posts" :key="post.fields.slug">{{ post.fields.title }}</li>
-        </ul>
-      </div>
-    </v-flex>
+    <div class="text-center">
+      <ul>
+        <li v-for="post in posts" :key="post.fields.slug">{{ post.fields.title }}</li>
+      </ul>
+    </div>
   </v-layout>
 </template>
 
